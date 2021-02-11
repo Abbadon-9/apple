@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Nunito:wght@200&display=swap');
+
+:root{
+    --color1: -30px -20px rgba(0,0,0,.1)inset;
+    --color2: -70px -40px rgba(0,0,0,.1)inset;
+    --color3: 5px 5px 0 0 rgba(225,225,225,.2)inset;
+}
+
+body, html{
+    height: 100%;
+    padding:0;
+    margin: 0;
+}
+
+body{
+    color: black;
+    background: -webkit-radial-gradient(rgb(248, 188, 188) 5%, rgb(226, 160, 160) 25%, rgb(179, 128, 128) 80%);
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+b{
+    color:#d1d1d1;
+}
+
+.nubes, .mapa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.nubes{
+    height: 220px;
+    width: 220px;
+}
+
+.nubes img{
+    position: relative;
+    z-index: 20;
+}
+
+.mapa{
+    background: url(../img/mapa2.png);
+    background-size: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: var(--color1),
+                var(--color2),
+                var(--color3);
+    -webkit-animation: manzana 7s linear infinite;            
+}
+
+@-webkit-keyframes manzana{
+    from{
+        background-position: left center;
+    }
+    to{
+        background-position: -396px center;
+    }
+}
